@@ -44,15 +44,13 @@ socket.on("anonname", (data) => {
 
 function navdisplay() {
   if (document.getElementById("displaylink").innerText == "Hide") {
-    document.getElementById("top").setAttribute("style", "display: none");
+    document.getElementById("top").setAttribute("style", "display: none;");
     document.getElementById("displaylink").innerText = "Show";
   } else {
-    document.getElementById("top").setAttribute("style", "display: initial");
+    document.getElementById("top").setAttribute("style", "display: initial;");
     document.getElementById("displaylink").innerText = "Hide";
   }
 }
-
-?
 
 document.getElementById("changename").onclick = () => {
   let username = document.getElementById("name").value;
